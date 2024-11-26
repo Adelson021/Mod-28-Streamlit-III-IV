@@ -81,7 +81,7 @@ def main():
 
     # Tentativa de carregar imagem na barra lateral
     try:
-        image = Image.open(r"C:\Users\Joel\Downloads\Data Scientist\Mod 28\download\Mod-28-Streamlit-III-IV/Bank-Branding.jpg")
+        image = Image.open("Bank-Branding.jpg")
         st.sidebar.image(image)
     except Exception as e:
         st.error(f'Erro ao carregar imagem: {e}')
